@@ -91,7 +91,6 @@ print('B=',B)
 print('size of rows',size_of_rows,"size of column",size_of_column,",E=",Eqin)
 
 '''
-#dkfmjdkfjjkdfk
 if(all_error==0):
     f=open("analyze_"+filename,"x")
     f.write("MinMAx="+str(MinMax)+"\nC="+str(C)+"\nA="+str(A)+"\nB="+str(B)+"\nEqin="+str(Eqin))
