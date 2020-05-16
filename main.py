@@ -7,8 +7,8 @@ from convert_to_duality_problem import dual_problem
 
 
 all_error=0 #mazeuei ola ta error apo kathe synartisi 
-#filename=opener() #sinartisi opener zitaei apo ton xristi na balei to onoma tou fakelou kai eleghi an yparxei o fakelos
-filename="LP02.LTX"
+filename=opener() #sinartisi opener zitaei apo ton xristi na balei to onoma tou fakelou kai eleghi an yparxei o fakelos
+#filename="LP02.LTX"
 
 all_error,size_of_rows, size_of_column,Eqin=size_function(filename,all_error) #pernw piso to megethos twn pinakwn poy prepei na dimiourgisw
 #print('size of rows',size_of_rows,"size of column",size_of_column,",E=",Eqin)
@@ -87,13 +87,13 @@ if(filename!=None and all_error==0):
             all_error=all_error+1
             #print (words,end='')
 
-print('MinMax=',MinMax)
-print('C=',C,'A=',A)
-print('B=',B)
-print('size of rows',size_of_rows,"size of column",size_of_column,",E=",Eqin)
+#print('MinMax=',MinMax)
+#print('C=',C,'A=',A)
+#print('B=',B)
+#print('size of rows',size_of_rows,"size of column",size_of_column,",E=",Eqin)
 
 complete_text_of_dual_problem=dual_problem(MinMax,Eqin,A,B,X)
-print(complete_text_of_dual_problem)
+#print(complete_text_of_dual_problem)
 
 
 if(all_error==0):
