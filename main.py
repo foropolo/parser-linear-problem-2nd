@@ -3,10 +3,12 @@ from size_checker_and_Eqin import size_function
 from B_array import B_array_creator
 from check_numbers_after_restrictions import check_if__miss_symbol
 from C_A_finder import find_arrays_A_C
+from convert_to_duality_problem import dual_problem
+
 
 all_error=0 #mazeuei ola ta error apo kathe synartisi 
 #filename=opener() #sinartisi opener zitaei apo ton xristi na balei to onoma tou fakelou kai eleghi an yparxei o fakelos
-filename="LP01.LTX"
+filename="LP02.LTX"
 
 all_error,size_of_rows, size_of_column,Eqin=size_function(filename,all_error) #pernw piso to megethos twn pinakwn poy prepei na dimiourgisw
 #print('size of rows',size_of_rows,"size of column",size_of_column,",E=",Eqin)
@@ -90,15 +92,16 @@ print('C=',C,'A=',A)
 print('B=',B)
 print('size of rows',size_of_rows,"size of column",size_of_column,",E=",Eqin)
 
+complete_text_of_dual_problem=dual_problem(MinMax,Eqin,A,B,X)
+print(complete_text_of_dual_problem)
 
 
-'''
 if(all_error==0):
-    f=open("analyze_"+filename,"x")
-    f.write("MinMAx="+str(MinMax)+"\nC="+str(C)+"\nA="+str(A)+"\nB="+str(B)+"\nEqin="+str(Eqin))
+    f=open("duality_problem"+filename,"x")
+    f.write(complete_text_of_dual_problem)
     f.close
 else:
     print("There exist at least ",all_error," and the program cannot create the analyze the ",filename)
 
-'''
+
 
