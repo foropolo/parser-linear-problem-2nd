@@ -90,6 +90,8 @@ print('C=',C,'A=',A)
 print('B=',B)
 print('size of rows',size_of_rows,"size of column",size_of_column,",E=",Eqin)
 
+
+
 '''
 if(all_error==0):
     f=open("analyze_"+filename,"x")
