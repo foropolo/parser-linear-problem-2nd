@@ -1,10 +1,10 @@
 python == 3.5.2 64bit
 
-IDE Visual Studio Code == 1.44.2
+#IDE Visual Studio Code == 1.44.2
 
-The opening file HAS to be in the same file with the APP
+#The opening file HAS to be in the same file with the APP
 
-The APP create a file , if you run one time the program ,
-then if it run succeed ,it will create a new file.
-If you want to run it again ,you HAVE TO DELETE MANUALLY 
-the previous file which locate in the same path.  
+#The APP create a file , if you run one time the program ,
+#then if it run succeed ,it will create a new file.
+#If you want to run it again ,you HAVE TO DELETE MANUALLY 
+#the previous file which locate in the same path.  
